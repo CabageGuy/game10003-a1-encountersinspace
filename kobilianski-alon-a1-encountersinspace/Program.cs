@@ -31,16 +31,24 @@ if (choice == "2")
         string dialouge1b = Console.ReadLine();
         if (dialouge1b == "1")
         {
-            Console.WriteLine("[AS you salute the captain goodbye you can't help but stare at the MS ]");
+            Console.WriteLine("[As you salute the captain goodbye you can't help but stare at the MS suddenly the alarms start blaring]");
+            Console.WriteLine("MS team prepare to launch multiple suits inbound");
+            Console.WriteLine("1. [Prepare to launch]");
+            Console.WriteLine("2. [Ignore your orders, and find a place to relax]");
 
         }
         //extra option if you choose not to say anything
         else 
         {
             Console.WriteLine("[You ignore the Captain, you are too entracned by the MS infront of you]");
+            Console.WriteLine("[Suddenly the alarms start to blare a voice speaks through the intercoms]");
+            Console.WriteLine("MS team prepare to launch multiple suits inbound");
+            Console.WriteLine("1. [Prepare to launch]");
+            Console.WriteLine("2. [Ignore your orders, and find a place to relax]");
         }
 
     }
+    //Second dialogue option for dialogue1
     else if (dialouge1 == "2")
     {
         Console.WriteLine("Ah eager to start I see, one small bit of adive to you, dont get too carried away out there");
@@ -56,6 +64,21 @@ if (choice == "2")
 else if (choice == "1")
 {
     String spacenoid;
-    Console.WriteLine("Hello There");
+    Console.WriteLine("[In the out reaches of space lays Colony 16, the Neo Zoids base of operations]");
+    Console.WriteLine("[You have risen the ranks through blood sweat and tears, and now here you are an ace pilot and a lieutenant aboard the new Flagz warship]");
+    Console.WriteLine("So glad you can make it lieutenant, I hope the trip wasn't too bad for you");
+    Console.WriteLine("1. [Don't worry about me, how we looking? Is everyone ready to attack their new ship?]");
+    Console.WriteLine("2. [Im fine thank you, please lets not waste anymore time and rid ourselves of the EPF and that new ship]");
 
+    String spacechoice1 = Console.ReadLine();
+    if (spacechoice1 == "1")
+    {
+
+
+    }
+    else if (spacechoice1 == "2")
+    { 
+    
+    }
 }
+
