@@ -73,7 +73,7 @@ else if (choice == "1")
     String spacechoice1 = Console.ReadLine();
     if (spacechoice1 == "1")
     {
-
+        Console.WriteLine("Hello");
 
     }
     else if (spacechoice1 == "2")
