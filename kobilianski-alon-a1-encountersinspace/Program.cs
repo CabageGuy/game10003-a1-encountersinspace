@@ -4,7 +4,8 @@ using System.Dynamic;
 
 Console.WriteLine("The Year is 0067 on the Central Fusion calandar, space is the new frontier many people found refuge around the stars creating colonies.");
 Console.WriteLine("However, the EPF Earth Protection Forces have been earth policies for too long, governing the spacenoids for too long, this begining a long fought war over the stars");
-Console.WriteLine("who do you wish to fight for? The peace for all spacenoids?[1] or for the right to earthkind?[2]");
+Console.WriteLine("who do you wish to fight for? The peace for all spacenoids?[1]");
+Console.WriteLine("Or for the right to earthkind?[2]");
 
 Console.ReadLine();
 //route 1 the earth forces 
@@ -12,9 +13,10 @@ String choice = "2";
 if (choice == "2")
 {
     Console.WriteLine("Welcome to the team cadet, I hope your transfer to our ship wasn't too hard");
+    //every option is made with numbers 
     Console.WriteLine("1. [No thank you for this oppurtunity captain]");
-    Console.WriteLine("2. [it wasnt too bad sir! I will complete my mission to eliminate the enemy]");
-
+    Console.WriteLine("2. [It wasnt too bad sir! I will complete my mission to eliminate the enemy]");
+   
     String dialouge1 = Console.ReadLine();
     if (dialouge1 == "1")
     {
@@ -23,6 +25,20 @@ if (choice == "2")
         Console.WriteLine("[You follow the captain to the Bay, before you line many mobile suits all GMx-03s the basic models for war.");
         Console.WriteLine("[The both of you stop before a pristine white and blue suit, looking more advanced than any other suit]");
         Console.WriteLine("[something about the suit bugs you, like its......calling you]");
+        Console.WriteLine("Well here it is, your very own personal mobile suit, the RX-09e7 we dont have a proper name for it just yet but better take good care of it understood?");
+        Console.WriteLine("1. [SIR!]");
+
+        string dialouge1b = Console.ReadLine();
+        if (dialouge1b == "1")
+        {
+            Console.WriteLine("[AS you salute the captain goodbye you can't help but stare at the MS ]");
+
+        }
+        //extra option if you choose not to say anything
+        else 
+        {
+            Console.WriteLine("[You ignore the Captain, you are too entracned by the MS infront of you]");
+        }
 
     }
     else if (dialouge1 == "2")
@@ -32,6 +48,8 @@ if (choice == "2")
         Console.WriteLine("[You follow the captain to the Bay, before you line many mobile suits all GMx-03s the basic models for war.");
         Console.WriteLine("[The both of you stop before a pristine white and blue suit, looking more advanced than any other suit]");
         Console.WriteLine("[something about the suit bugs you, like its......calling you]");
+        Console.WriteLine("Well here it is, your very own personal mobile suit, the RX-09e7 we dont have a proper name for it just yet but better take good care of it understood?");
+        Console.WriteLine("1. [Whatever]");
     }
 
 }
