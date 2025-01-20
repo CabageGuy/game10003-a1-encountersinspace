@@ -1,6 +1,7 @@
 ﻿
 //Intro to the game
 using System.Dynamic;
+using System.Runtime.CompilerServices;
 
 Console.WriteLine("The Year is 0067 on the Central Fusion calandar, space is the new frontier many people found refuge around the stars creating colonies.");
 Console.WriteLine("However, the EPF Earth Protection Forces have been earth policies for too long, governing the spacenoids for too long, this begining a long fought war over the stars");
@@ -33,8 +34,7 @@ if (choice == "1")
         {
             Console.WriteLine("[As you salute the captain goodbye you can't help but stare at the MS suddenly the alarms start blaring]");
             Console.WriteLine("MS team prepare to launch multiple suits inbound");
-            Console.WriteLine("1. [Prepare to launch]");
-            Console.WriteLine("2. [Ignore your orders, and find a place to relax]");
+            Console.WriteLine("1. [Prepare to launch]");           
 
             String dialogue2a = Console.ReadLine();
             if (dialogue2a == "1")
@@ -57,24 +57,42 @@ if (choice == "1")
                     Console.WriteLine("1. [Think over everything, one wrong move and it's over]");
                     Console.WriteLine("2. [Engage in an honorable duel with the red suit]");
                     String dialouge3b = Console.ReadLine();
-                    if (dialouge3b == "1") 
-                    { 
+                    if (dialouge3b == "1")
+                    {
                         Console.WriteLine("[As you you think of all the battle strategies you can think of, you notice the red suit approaching fast you very clumsily ready yourself for the worst]");
+                        Console.WriteLine("[You unfortunately could not prepare for his assault leading to your cockpit being damaged.......You fought bravely]");
+                        Console.WriteLine("GAME OVER");
                     }
                     else if (dialouge3b == "2")
                     {
                         Console.WriteLine("[You stand your guard requesting a duel, in this deep void the only thing that stands before you is the red suit itself]");
+                        Console.WriteLine("[As you face the red suit head on you notice something strange...You can hear the pilot in your head]");
+                        Console.WriteLine("Well,well welll, aren't you quite a capable fighter, come then let's have a spectacular duel");
+                        Console.WriteLine("1. [Unsheath your beam saber and go for slashes to the cockpit]");
+                        Console.WriteLine("2. [Start off from afar, try to shoot him down]");
+
+                        String dialogue4a = Console.ReadLine();
+                        if (dialogue4a == "1")
+                        {
+                            Console.WriteLine("[You continue to clash blades with the red suit nothing seems to make him crack]");
+                            Console.WriteLine("[Your battle rages on still, when suddenly an explosion goes off before you, blowing you away from the red suit]");
+                            Console.WriteLine("[Before you now stands a large mobile suit, one no one has ever seen, as points its rifles at the both of you it tells you] CEASEFIRE NOW");
+                            Console.WriteLine("TO BE CONTINUED");
+                        }
+                        else if (dialogue4a == "2")
+                        {
+                            Console.WriteLine("[As you aim and fire at the red suit you notice hes dodging every shot flawlessly, slowly getting closer.......Until nothing]");
+                            Console.WriteLine("GAME OVER");
+                        }
+
                     }
+
                 }
-                else if (dialogue2a == "2")
-                {
-                    Console.WriteLine("[You laze around in the lunch bay, enjoying the view of explosions until a red suit appears in view blowing the ship up]");
-                    Console.WriteLine("GAME OVER");
-                }
-            }                 
+              
             }
         }
-        //Second dialogue option for dialogue1          
+    }
+    //Second dialogue option for dialogue1          
     else if (dialouge1 == "2")
     {
         Console.WriteLine("Ah eager to start I see, one small bit of adive to you, dont get too carried away out there");
@@ -85,11 +103,11 @@ if (choice == "1")
         Console.WriteLine("Well here it is, your very own personal mobile suit, the RX-09e7 we dont have a proper name for it just yet but better take good care of it understood?");
         Console.WriteLine("1. [Whatever]");
         String dialogue1c = Console.ReadLine();
-        if (dialogue1c == "1") 
+        if (dialogue1c == "1")
         {
             Console.WriteLine("[It seems your ignorance caused you to slip and fall, you mange to activate the launch sequence causing a major accident...You dont survive]");
-            Console.WriteLine("GAME OVER");  
-        
+            Console.WriteLine("GAME OVER");
+
         }
     }
 }
@@ -106,14 +124,40 @@ else
     if (spacechoice1 == "1")
     {
         Console.WriteLine("Of course, the squad is ready and waiting for launch sequence right now, your special flash model is also ready and waiting");
+        Console.WriteLine("[Before standing tall is your red suit, your nickname the Red Nova matches this suit perfectly, you waste no time and prepare to launch]");
+        Console.WriteLine("1. [Launch!]");
+        string space1a = Console.ReadLine();
+        if (space1a == "1")
+        {
+            Console.WriteLine("[Space is a beautiful void, all you see before you now is your enemies how do you deal with 4 enemy suits]");
+            Console.WriteLine("1. [Engage with your team spreading out, take each one, one on one]");
 
+            String sapce2a = Console.ReadLine();
+            if (sapce2a == "1")
+            {
+                Console.WriteLine("[As your team splits off, you notice shots coming your way, a new white suit stands ahead of you, you charge in and attack it]");
+                Console.WriteLine("[You realize that this pilot is just like you, an Advanced Human, those that have reached the full potential of their brain]");
+                Console.WriteLine("[You engage in a one sided conversation, you know he can hear you but you dont know if he can respond, when suddenly an explosion goes off before you, blowing you away from the White suit]");
+                Console.WriteLine("[Before you now stands a large mobile suit, one no one has ever seen, as points its rifles at the both of you it tells you] CEASEFIRE NOW");
+                Console.WriteLine("TO BE CONTINUED");
+            }
+            else if (spacechoice1 == "2")
+            {
+                Console.WriteLine("My mistake sir! We are ready to move out when you are");
+                Console.WriteLine("[As you prepare to launch something inside you calls out to the far reaches of spac, you notice someone out there is calling to you, calling to fight]");
+                Console.WriteLine("[After launching you fly out to see a single suit, a white suit standing before you, you only have one choice engage]");
+                Console.WriteLine("1. [Let's go]");
+
+                String space3 = Console.ReadLine();
+                if (space3 == "1")
+                {
+                    Console.WriteLine("[You fight this white suit but something seems off....Really off, it can evade any and all of your attacks, it speeds around your view, it wont stop]");
+                    Console.WriteLine("[Suddenly a ringing in your head plays, and you hear the voice of the pilot] Die space scum");
+                    Console.WriteLine("GAME OVER");
+                }
+            }
+        }
     }
-    else if (spacechoice1 == "2")
-    {
-        Console.WriteLine("My mistake sir! We are ready to move out when you are");
-
-    }
-
 }
 
 
